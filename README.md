@@ -1,1 +1,2 @@
-"# WeatherX" 
+# WeatherX
+A Weather Application
