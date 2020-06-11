@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+:root {
+    --primaryLight: #F2F2F2;
+    --secondaryLight: #FFFFFF;
+    --primaryDark: #2E3335;
+    --secondaryDark: #757575;
+    --primaryAccent: #659AF6;
+    --txtL: 48px;
+    --txtM: 20px;
+    --txtS: 14px;
+    --primaryFont: 'Montserrat',sans-serif;
+    --secondaryFont: 'Calibri Light',sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: var(--primaryFont);
+}
+
+html {
+    background: var(--primaryLight);
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+#appContainer {
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    width: 500px;
+    height: 375px;
+    /* filter: blur(2px); */
+}
+
+#appContainer #app #appTop {
+    background: var(--secondaryLight);
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: var(--primaryDark) 1px 10px 15px -10px;
+}
+
+#appContainer #app #appBottom {
+    background: var(--primaryDark);
+    height: 125px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--primaryDark) 1px 10px 15px -10px;
+}
+
+#appContainer #app #appTop #appTop-upper {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 25%;
+}
+
+#appContainer #app #appTop #appTop-upper #refresh {
+    cursor: pointer;   
+}
+
+#appContainer #app #appTop #appTop-upper #refresh img {
+    width: 25px;
+    height: 25px;
+}
+
+#appContainer #app #appTop #appTop-upper #regionFormContainer #regionForm {
+    
+}
+
+#appContainer #app #appTop #appTop-upper #regionFormContainer #regionForm input[type="text"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: .01rem solid var(--primaryAccent);
+    padding-bottom: .25rem;
+    text-align: center;
+}
+
+#appContainer #app #appTop #appTop-upper #regionFormContainer #regionForm #regionInputSubmit {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: .25rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#appContainer #app #appTop #appTop-upper #regionFormContainer #regionForm #regionInputSubmit:hover {
+    transition: .5s;
+    color: var(--primaryAccent);
+}
+
+#appContainer #app #appTop #appTop-upper #shutdown {
+    cursor: pointer;   
+}
+
+#appContainer #app #appTop #appTop-upper #shutdown img {
+    width: 25px;
+    height: 25px;
+}
+
+#appContainer #app #appTop #appTop-middle {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    padding: .5rem;
+    height: 50%;
+}
+
+#appContainer #app #appTop #appTop-middle #climate {
+
+}
+
+#appContainer #app #appTop #appTop-middle #climate img {
+    width: 100px;
+    height: 100px;
+}
+
+#appContainer #app #appTop #appTop-lower {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 25%;
+}
+
+#appContainer #app #appTop #appTop-lower #climatic {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#appContainer #app #appTop #appTop-lower #climatic #climatic-temp {
+    margin-right: .125rem;
+}
+
+#appContainer #app #appTop #appTop-lower #climatic #climatic-sky-region {
+    margin-left: .125rem;
+}
+
+#appContainer #app #appTop #appTop-lower #date {
+    position: absolute;
+    right: 0;
+    bottom: .5rem;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+#appContainer #app #appBottom #appBottom-head {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#appContainer #app #appBottom #appBottom-head #wind {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#appContainer #app #appBottom #appBottom-head #wind #wind-icon {
+    margin-left: .5rem;
+}
+
+#appContainer #app #appBottom #appBottom-head #wind #wind-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+#appContainer #app #appBottom #appBottom-head #wind #wind-val {
+    margin-left: .5rem;
+}
+
+#appContainer #app #appBottom #appBottom-head #humidity {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#appContainer #app #appBottom #appBottom-head #humidity #humidity-icon {
+    
+}
+
+#appContainer #app #appBottom #appBottom-head #humidity #humidity-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+#appContainer #app #appBottom #appBottom-head #humidity #humidity-val {
+    margin-left: .5rem;
+}
+
+#appContainer #app #appBottom #appBottom-head #temp {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#appContainer #app #appBottom #appBottom-head #temp #temp-icon {
+ 
+}
+
+#appContainer #app #appBottom #appBottom-head #temp #temp-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+#appContainer #app #appBottom #appBottom-head #temp #temp-val {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.bg-accentP {
+    background: var(--primaryAccent);
+}
+
+.text-large {
+    font-size: var(--txtL);
+}
+
+.text-medium {
+    font-size: var(--txtM);
+}
+
+.text-small {
+    font-size: var(--txtS);
+}
+
+.text-lightP {
+    color: var(--primaryLight);
+}
+
+.text-lightS {
+    color: var(--secondaryLight);
+}
+
+.text-darkP {
+    color: var(--primaryDark);
+}
+
+.text-darkS {
+    color: var(--secondaryDark);
+}
+
+.text-primary {
+    font-family: var(--primaryFont);
+}
+
+.text-secondary {
+    font-family: var(--secondaryFont);
+}
+  
+@media(max-width: 600px) {
+    #appContainer {
+        position: relative;
+        top: 20vh;
+        margin: auto;
+        width: 400px;
+        height: 275px;
+    }
+}

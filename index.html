@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherX</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <section id="appContainer">
+        <div id="app" class="container">
+            <div id="appTop">
+                <div id="appTop-upper">
+                    <div id="refresh">
+                        <img id="refreshIcon" src="./public/img/restart_100px.png" alt="Refresh">
+                    </div>
+                    <div id="regionFormContainer">
+                        <form action="" id="regionForm">
+                            <input type="text" name="" placeholder="Polgolla,LK" class="text-darkP text-small" id="regionInput">
+                            <button type="submit" id="regionInputSubmit" class="text-darkS"><i class="fa fa-search"></i></button>
+                            <p class="container text-darkS text-small" id="successLabel"><i class="fa fa-smile"></i></p>
+                        </form>
+                    </div>
+                    <div id="shutdown">
+                        <img id="shutDownIcon" src="./public/img/shutdown_100px.png" alt="Shutdown">
+                    </div>
+                </div>
+                <div id="appTop-middle">
+                    <div id="climate">
+                        <img src="./public/img/partly_cloudy_day_100px.png" alt="Climate">
+                    </div>
+                </div>
+                <div id="appTop-lower">
+                    <div id="climatic">
+                        <div id="climatic-temp" class="text-large text-darkP">
+                            79°
+                        </div>
+                        <div id="climatic-sky-region">
+                            <div id="sky" class="text-medium text-darkS">
+                                Cloudy Sky
+                            </div>
+                            <div id="region" class="text-medium text-darkP text-secondary">
+                                Polgolla - Sri Lanka
+                            </div>
+                        </div>
+                    </div>
+                    <div id="date" class="bg-accentP text-lightP">
+                        <div id="month" class="text-medium">
+                            Nov
+                        </div>
+                        <div id="day" class=" text-medium">
+                            24
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="appBottom">
+                <div id="appBottom-head">
+                    <div id="wind">
+                        <div id="wind-icon">
+                            <img src="./public/img/sea_waves_100px.png" alt="Wind">
+                        </div>
+                        <div id="wind-val" class="text-lightP text-medium">
+                            2 MPH
+                        </div>
+                    </div>
+                    <div id="humidity">
+                        <div id="humidity-icon">
+                            <img src="./public/img/water_100px.png" alt="Humidity">
+                        </div>
+                        <div id="humidity-val" class="text-lightP text-medium">
+                            33%
+                        </div>
+                    </div>
+                    <div id="temp">
+                        <div id="temp-icon">
+                            <img src="./public/img/summer_100px.png" alt="Temperature">
+                        </div>
+                        <div id="temp-val" class="text-lightP text-medium">
+                            1005 hPa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
