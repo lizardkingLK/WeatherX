@@ -1,5 +1,5 @@
 # WeatherX
-##A Weather Application.
+## A Weather Application.
 
 - WeatherX - SNDP @AMUSoft
 - Powered By - OpenWeatherMap.org
