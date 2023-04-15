@@ -1,6 +1,6 @@
 # WeatherX
 ## A Weather Application.
 
-- WeatherX - SNDP @AMUSoft
+- WeatherX - LizardkingLK
 - Powered By - OpenWeatherMap.org
 - Design Idea - @bennycoder
